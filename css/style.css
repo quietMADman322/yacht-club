@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding:20px 55px;
+  padding:0;
   font-family: "Roboto",sans-serif;
   color: #163152;
   font-size: 16px;
@@ -13,6 +13,7 @@ a {
 }
 
 .main-nav {
+  padding: 20px 55px;
   display: flex;
   width: 1280px;
   align-items: center;
@@ -20,10 +21,13 @@ a {
   }
 
 .logo {
-  margin-right: auto;
+  margin-right:471px;
+  
 }
 
 .navigation-list {
+  padding: 0;
+  margin:0;
   display: flex;
   gap:30px;
   list-style: none;
@@ -31,11 +35,25 @@ a {
   text-transform:uppercase ;
 }
 
+.navigation-list li {
+  font-size: 14px;
+}
+
+.user a{
+  width: 36px;
+  height: 36px;
+  border: 1px solid #00C6BD;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero {
   width: 1170px;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 55px;
+  margin-right: 55px;
   margin-bottom: 120px;
 }
 
@@ -44,13 +62,14 @@ a {
   line-height: 60px;
   text-transform: uppercase;
   font-style: italic;
+  margin-left: 70px;
 }
 
 .blog-article-1 {
  display: flex;
  width: 1030px;
- margin-left: auto;
- margin-right: auto;
+ margin-left: 125px;
+ margin-right: 125px;
  margin-bottom: 100px;
  gap:30px;
 }
@@ -61,6 +80,7 @@ a {
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
   text-underline-position: under;
+  margin-bottom: 30px;
   }
 
 .blog-info {
@@ -76,8 +96,8 @@ a {
 .blog-article-2 {
   display: flex;
   width: 1030px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 125px;
+  margin-right: 125px;
   gap:30px;
   margin-bottom: 120px;
 }
@@ -88,13 +108,15 @@ a {
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
   text-underline-position: under;
+  margin-bottom: 30px;
 }
 
 .news {
   width: 770px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 255px;
+  margin-right: 255px;
   margin-bottom: 120px;
+  padding: 0;
 }
 
 .news h2 {
@@ -105,6 +127,17 @@ a {
   text-underline-offset: 15px;
   text-underline-position: under;
   margin-bottom: 55px;
+}
+
+.teams {
+   padding-left: 15px;  
+   /* FIXMEПодобрал на глаз,по идее так нельзя. Если ставить 0 или убрать будет раньше или сильно больше. */ 
+}
+
+.news blockquote {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: bold;
 }
 
 .photo-sign {
@@ -131,6 +164,9 @@ a {
   width: 1010px;
   margin-bottom: 120px;
   display: flex;
+  margin-left: 55px;
+  margin-right: 215px;
+  gap:100px;
 }
 
 .contacts h2 {
@@ -139,19 +175,69 @@ a {
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
   text-underline-position: under;
+  margin-bottom: 30px;
 }
 
 .socials {
   list-style: none;
   display: flex;
   gap:10px;
+  padding: 0;
+  margin: 0;
 }
 
-.socials img {
+.socials a {
   border: 1px solid #00C6BD;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  
+}
+
+.main-footer {
+  width: 1280px;
+  display: flex;
+  margin: 0 55px 60px 55px;
+  gap:125px;
+}
+
+.logo-policy{
+  width: 175px;
+}
+
+.logo-policy p {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.list-of-links {
+  list-style: none;
+  display: flex;
+  gap:70px;
+  margin: 0;
+  padding: 0;
+}
+
+.list-of-links div {
+  width: 165px;
+}
+
+.list-header {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight:bold ;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.list-of-links-mini {
+  list-style: none;
+  padding: 0;
+}
+
+.list-of-links-mini li {
+  font-size: 14px;
 }
